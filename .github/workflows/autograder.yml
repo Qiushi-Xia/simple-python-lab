@@ -7,12 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@latest_version # Replace with the actual latest version
+    - uses: actions/checkout@v4.1.7
     - name: Set up Python
-      uses: actions/setup-python@latest_version # Replace with the actual latest version
+      uses: actions/setup-python@v5.1.0
       with:
         python-version: '3.x'
-        node-version: '20' # This line is hypothetical; check if such an option exists
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
